@@ -1,7 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
+## I have taken the makeCachefunction directly from the README file
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
