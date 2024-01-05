@@ -20,13 +20,13 @@ makeCacheMatrix <- function(x = matrix()) {
 ## I've tried to write a function by using the syntax of the cachemean provided in the README file
 
 cacheSolve <- function(x, ...) {
-        Inv <- x$getinverse()
-        if(!is.null(Inv)) {
+        inv <- x$getinverse()
+        if(!is.null(inv)) {
                 message("getting cached data")
-                return(Inv)
+                return(inv)
         }
         data <- x$get()
-        Inv <- solve(data, ...)
-        x$setinverse(Inv)
-        Inv
+        inv <- solve(data, ...)
+        x$setinverse(inv)
+        inv
 }
